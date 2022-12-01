@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <section class="calculadora">
+        <div id="pantalla">
+            <div id="superior"></div>
+            <div id="inferior">0</div>
+        </div>
+        <div id="botones">
+                <div class="botonNumber" id="b9">9</div>
+                <div class="botonNumber" id="b8">8</div>
+                <div class="botonNumber" id="b7">7</div>
+                <div class="botonOper" id="bSuma">+</div>
+
+                <div class="botonNumber" id="b6">6</div>
+                <div class="botonNumber" id="b5">5</div>
+                <div class="botonNumber" id="b4">4</div>
+                <div class="botonOper" id="bResta">-</div>
+
+                <div class="botonNumber" id="b3">3</div>
+                <div class="botonNumber" id="b2">2</div>
+                <div class="botonNumber" id="b1">1</div>
+                <div class="botonOper" id="bMul">x</div>
+
+                <div id="bFlecha" onclick="borrar()">&larr;</div>
+                <div class="botonNumber" id="b0">0</div>
+                <div class="botonNumber" id="bPunto">.</div>
+                <div class="botonOper" id="bDiv">/</div>
+
+                <div id="bAC"  onclick="limpiar()">AC</div>
+                <div class="botonIgual" id="bIgual" onclick="signo('=')">=</div>
+            
+        </div>
+
+    </section>
+</body>
+<footer>
+    <script src="index.js"></script>
+</footer>
+</html>
