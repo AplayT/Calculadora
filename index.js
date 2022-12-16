@@ -45,6 +45,16 @@ function multiplicar(a,b) {
 function dividir(a,b) {
         return a/b;
 }
+function potencia(a,b) {
+        return Math.pow(a,b);
+}
+function modulo(a,b) {
+        return a%b;
+}
+function raiz2(a,b) {
+        return Math.sqrt(a,b);
+}
+
 
 function borrar() {
     const actual =  valorInf.innerHTML
@@ -84,6 +94,18 @@ function signo(operacion) {
             case '/':
                 console.log('div',a,b);
                 valorSup.innerHTML= dividir(a,b) + simbolo;                
+                break;     
+            case '^':
+                console.log('div',a,b);
+                valorSup.innerHTML= potencia(a,b) + simbolo;                
+                break;     
+            case 'Mod.':
+                console.log('div',a,b);
+                valorSup.innerHTML= modulo(a,b) + simbolo;                
+                break;     
+            case '√':
+                console.log('div',a,b);
+                valorSup.innerHTML= raiz2(a,b) + simbolo;                
                 break;     
                     
             case '':
